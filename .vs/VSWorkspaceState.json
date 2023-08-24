@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MyApplication",
+    "\\MyApplication\\app",
+    "\\MyApplication\\app\\src",
+    "\\MyApplication\\app\\src\\main",
+    "\\MyApplication\\app\\src\\main\\java",
+    "\\MyApplication\\app\\src\\main\\java\\com",
+    "\\MyApplication\\app\\src\\main\\java\\com\\test",
+    "\\MyApplication\\app\\src\\main\\java\\com\\test\\application"
+  ],
+  "SelectedNode": "\\MyApplication\\app\\src\\main\\res\\layout\\activity_main.xml",
+  "PreviewInSolutionExplorer": false
+}

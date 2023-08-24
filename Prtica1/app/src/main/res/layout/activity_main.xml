@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="150dp"
+    android:gravity="center_horizontal"
+    android:layout_marginHorizontal="40dp">>
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrada"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="36dp"
+        android:textSize="50dp"
+        android:layout_margin="35dp"/>
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Escreva o nome"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="163dp"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/txtSobrenome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Escreva o Sobrenome"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="339dp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enviar"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="469dp" />
+</LinearLayout>
