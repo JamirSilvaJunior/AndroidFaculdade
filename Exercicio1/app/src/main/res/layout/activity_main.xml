@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Custo de combustível"
+                    android:textAlignment="center"
+                    android:textSize="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tboxTotalKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Distância"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+                <TextView
+                    android:id="@+id/txtTotKm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total de quilômetros"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/tboxTotalKM"
+                    app:layout_constraintStart_toStartOf="@+id/tboxTotalKM"
+                    app:layout_constraintTop_toBottomOf="@+id/tboxTotalKM" />
+
+    <EditText
+        android:id="@+id/tboxPrecoL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Preço"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/tboxTotalKM"
+        app:layout_constraintStart_toStartOf="@+id/tboxTotalKM"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotKm" />
+
+                <TextView
+                    android:id="@+id/txtPrecoL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preço por litro"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/tboxPrecoL"
+                    app:layout_constraintStart_toStartOf="@+id/tboxPrecoL"
+                    app:layout_constraintTop_toBottomOf="@+id/tboxPrecoL" />
+
+    <EditText
+        android:id="@+id/tboxKML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Autonomia"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/tboxPrecoL"
+        app:layout_constraintStart_toStartOf="@+id/tboxPrecoL"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecoL" />
+
+                <TextView
+                    android:id="@+id/txtKMsL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KMs por litro"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/tboxKML"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="@+id/tboxKML"
+                    app:layout_constraintTop_toBottomOf="@+id/tboxKML" />
+
+                <TextView
+                    android:id="@+id/txtGastoTot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Seu gasto total será de"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    app:layout_constraintEnd_toEndOf="@+id/tboxKML"
+                    app:layout_constraintStart_toStartOf="@+id/tboxKML"
+                    app:layout_constraintTop_toBottomOf="@+id/txtKMsL" />
+
+                <TextView
+                    android:id="@+id/txtR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="172dp"
+                    android:text="R$"
+                    android:textSize="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtGastoTot" />
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Calcular"
+                    app:layout_constraintEnd_toEndOf="@+id/txtGastoTot"
+                    app:layout_constraintStart_toStartOf="@+id/txtGastoTot"
+                    app:layout_constraintTop_toBottomOf="@+id/txtR" />
+
+                <TextView
+                    android:id="@+id/txtValor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30dp"
+                    app:layout_constraintStart_toEndOf="@+id/txtR"
+                    app:layout_constraintTop_toBottomOf="@+id/txtGastoTot" />
+</androidx.constraintlayout.widget.ConstraintLayout>
